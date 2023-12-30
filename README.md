@@ -17,7 +17,7 @@ This type of protection usually involves pattern matching of URL paths. Let's at
 
 ![Untitled (2)](https://github.com/patzj/HTB-Challenges-Web-No-Threshold/assets/10325457/905419bc-0ca2-4b0f-8609-240ae644c9d6)
 
-Now, let's test if the login form is vulnerable to SQL injection. Initially, we'll try using `' OR '1'='1` in both the username and password fields to determine if it successfully goes through. Additionally, we should modify the form action to /auth/logi%6e using the browser's developer tools to prevent our POST request from being blocked.
+Now, let's test if the login form is vulnerable to SQL injection. Initially, we'll try using `' OR '1'='1` in both the username and password fields to determine if it successfully goes through. Additionally, we should modify the form action to `/auth/logi%6e` using the browser's developer tools to prevent our POST request from being blocked.
 
 ![Untitled (3)](https://github.com/patzj/HTB-Challenges-Web-No-Threshold/assets/10325457/7b35d094-17e8-447c-aed4-45ed1cb15157)
 
